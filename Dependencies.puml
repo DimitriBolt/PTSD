@@ -1,0 +1,39 @@
+@startuml
+
+title "Causal model of PTSD, anxiety and depression"
+left to right direction
+package "Predictors" {
+
+    object Trauma
+    Trauma : 17 binary features "Yes" ↔ "No"
+
+    object Daily_stressors
+    Daily_stressors : 31 ordinal features * 4 levels
+
+    }
+
+package "Criteria" {
+  object Anxiety
+  Anxiety : 10 ordinal features * 4 levels
+  object PTSD
+  PTSD : 25 ordinal features * 4 levels
+  object Depression
+  Depression : 14 ordinal features * 4 levels
+    }
+
+
+
+
+
+
+Daily_stressors ..> Anxiety
+Trauma ..> Anxiety
+
+Trauma ..> PTSD
+Daily_stressors ..> PTSD
+
+Trauma ..> Depression
+Daily_stressors --> Depression: The only relationship found.
+note bottom on link : R^2 = 0.77,\n P-value (F-statistic) = 0.4%
+
+@enduml
