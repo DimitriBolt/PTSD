@@ -14,11 +14,11 @@ package "Predictors" {
 
 package "Criteria" {
   object Anxiety
-  Anxiety : 10 ordinal features * 4 levels
+  Anxiety : 10 ordinal features * 4 levels => **continuous** var
   object PTSD
-  PTSD : 25 ordinal features * 4 levels
+  PTSD : 25 ordinal features * 4 levels => **continuous** var
   object Depression
-  Depression : 14 ordinal features * 4 levels
+  Depression : 14 ordinal features * 4 levels => **continuous** var
     }
 
 
