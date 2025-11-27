@@ -33,7 +33,7 @@ Trauma ..> PTSD
 Daily_stressors ..> PTSD
 
 Trauma ..> Depression
-Daily_stressors --> Depression: The only relationship found.
-note bottom on link : R^2 = 0.77,\n P-value (F-statistic) = 0.4%
+ Daily_stressors --> Depression /': The only relationship found.'/
+' note bottom on link : R^2 = 0.77,\n P-value (F-statistic) = 0.4%
 
 @enduml
